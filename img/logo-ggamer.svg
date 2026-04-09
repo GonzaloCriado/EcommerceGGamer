@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Logo GGamer</title>
+  <desc id="desc">Logotipo futurista con la letra G y detalles neon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a5cff" />
+      <stop offset="100%" stop-color="#14f1d9" />
+    </linearGradient>
+    <linearGradient id="stroke" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#9fefff" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="24" fill="#08111f" />
+  <rect x="6" y="6" width="84" height="84" rx="18" fill="none" stroke="url(#bg)" stroke-width="4" />
+  <path d="M28 30c5-6 12-9 22-9 11 0 18 4 23 11l-10 7c-3-4-7-6-13-6-10 0-16 6-16 15s6 15 16 15c8 0 14-4 16-11H48V43h30v7c-1 18-13 29-31 29-18 0-32-12-32-31 0-7 3-13 7-18 2 0 4 0 6 0Z" fill="url(#stroke)" />
+  <circle cx="72" cy="23" r="4" fill="#14f1d9" />
+</svg>
