@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GGamer | Registro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegacion principal">
+      <a class="brand" href="index.html">
+        <img src="img/logo-ggamer.svg" alt="Logo de GGamer" width="44" height="44">
+        <span>GGamer</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="teclados.html">Teclados</a>
+        <a href="mouse.html">Mouse</a>
+        <a href="auriculares.html">Auriculares</a>
+      </div>
+      <div class="nav-actions">
+        <a class="ghost-link" href="login.html">Login</a>
+        <a class="ghost-link" href="registro.html" aria-current="page">Registro</a>
+        <a class="button button-outline" href="login.html">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container form-page">
+    <section class="form-wrapper">
+      <div class="section-heading">
+        <p class="eyebrow">Registro</p>
+        <h1>Crear cuenta en GGamer</h1>
+        <p>Completa tus datos y sumate a una tienda pensada para jugadores.</p>
+      </div>
+
+      <form class="auth-form" action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Gonzalo" required>
+
+        <label for="apellido">Apellido</label>
+        <input id="apellido" name="apellido" type="text" placeholder="Criado Sosa" required>
+
+        <label for="registro-email">Email</label>
+        <input id="registro-email" name="email" type="email" placeholder="tuemail@ggamer.com" required>
+
+        <label for="registro-password">Contrasena</label>
+        <input id="registro-password" name="password" type="password" placeholder="Crea una contrasena" required>
+
+        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+        <input id="fecha-nacimiento" name="fecha-nacimiento" type="date" required>
+
+        <button class="button" type="submit">Registrarme</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Ya tienes cuenta? <a href="login.html">Inicia sesion</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GGamer | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegacion principal">
+      <a class="brand" href="index.html">
+        <img src="img/logo-ggamer.svg" alt="Logo de GGamer" width="44" height="44">
+        <span>GGamer</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="teclados.html">Teclados</a>
+        <a href="mouse.html">Mouse</a>
+        <a href="auriculares.html">Auriculares</a>
+      </div>
+      <div class="nav-actions">
+        <a class="ghost-link" href="login.html" aria-current="page">Login</a>
+        <a class="ghost-link" href="registro.html">Registro</a>
+        <a class="button button-outline" href="login.html">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container form-page">
+    <section class="form-wrapper">
+      <div class="section-heading">
+        <p class="eyebrow">Acceso</p>
+        <h1>Iniciar sesion</h1>
+        <p>Ingresa tus datos para acceder a tu cuenta y continuar tu experiencia en GGamer.</p>
+      </div>
+
+      <form class="auth-form" action="#" method="post">
+        <label for="login-email">Email</label>
+        <input id="login-email" name="email" type="email" placeholder="tuemail@ggamer.com" required>
+
+        <label for="login-password">Contrasena</label>
+        <input id="login-password" name="password" type="password" placeholder="********" required>
+
+        <button class="button" type="submit">Ingresar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>No tienes cuenta? <a href="registro.html">Registrate aqui</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
