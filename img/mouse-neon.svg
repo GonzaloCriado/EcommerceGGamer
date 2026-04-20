@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" role="img" aria-labelledby="title desc">
+  <title id="title">Mouse gamer neon</title>
+  <desc id="desc">Ilustracion SVG de un mouse gamer con detalles luminosos.</desc>
+  <defs>
+    <linearGradient id="mouseBody" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#17203a"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+    <linearGradient id="mouseGlow" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#8a5cff"/>
+      <stop offset="55%" stop-color="#26a9ff"/>
+      <stop offset="100%" stop-color="#14f1d9"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="260" cy="255" rx="120" ry="28" fill="#8a5cff" opacity="0.14"/>
+  <path d="M260 52c70 0 112 56 112 129 0 60-40 98-112 98s-112-38-112-98c0-73 42-129 112-129Z" fill="url(#mouseBody)" stroke="url(#mouseGlow)" stroke-width="7"/>
+  <path d="M260 58v72" stroke="#14f1d9" stroke-width="6" stroke-linecap="round"/>
+  <path d="M220 84c-25 20-38 54-38 92M300 84c25 20 38 54 38 92" stroke="#26a9ff" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <rect x="247" y="88" width="26" height="44" rx="13" fill="#10182d" stroke="#8a5cff" stroke-width="4"/>
+  <path d="M222 208c22 18 54 18 76 0" stroke="#14f1d9" stroke-width="6" stroke-linecap="round"/>
+</svg>

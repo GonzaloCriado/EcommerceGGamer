@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" role="img" aria-labelledby="title desc">
+  <title id="title">Auriculares gamer neon</title>
+  <desc id="desc">Ilustracion SVG de auriculares gamer con iluminacion neon.</desc>
+  <defs>
+    <linearGradient id="headsetBody" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#171f3a"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+    <linearGradient id="headsetGlow" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#8a5cff"/>
+      <stop offset="52%" stop-color="#26a9ff"/>
+      <stop offset="100%" stop-color="#14f1d9"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="260" cy="260" rx="145" ry="28" fill="#26a9ff" opacity="0.12"/>
+  <path d="M150 178c0-78 43-126 110-126s110 48 110 126" fill="none" stroke="url(#headsetGlow)" stroke-width="14" stroke-linecap="round"/>
+  <rect x="112" y="156" width="82" height="100" rx="24" fill="url(#headsetBody)" stroke="#8a5cff" stroke-width="6"/>
+  <rect x="326" y="156" width="82" height="100" rx="24" fill="url(#headsetBody)" stroke="#14f1d9" stroke-width="6"/>
+  <path d="M194 232h60c22 0 36 12 45 28" fill="none" stroke="#26a9ff" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="307" cy="264" r="9" fill="#14f1d9"/>
+  <path d="M148 190h12M360 190h12" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+</svg>
