@@ -1,0 +1,12 @@
+{
+  "name": "ggamer",
+  "version": "1.0.0",
+  "description": "E-commerce gamer estatico con estilos en SASS.",
+  "scripts": {
+    "build:css": "sass scss/styles.scss css/styles.css --style=expanded",
+    "watch:css": "sass scss/styles.scss css/styles.css --watch --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}
