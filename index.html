@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<>
+<body>
   <header class="site-header">
     <nav class="navbar container" aria-label="Navegacion principal">
       <a class="brand" href="index.html">
@@ -17,7 +17,7 @@
         <span>GGamer</span>
       </a>
       <div class="nav-links">
-        <a href="index.html">Home</a>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="teclados.html">Teclados</a>
         <a href="mouse.html">Mouse</a>
         <a href="auriculares.html">Auriculares</a>
@@ -45,14 +45,20 @@
         </div>
       </div>
 
-      <aside class="hero-panel">
-        <div class="stat-card">
-          <span class="stat-number">3</span>
-          <span class="stat-label">Categorias principales</span>
+      <aside class="hero-panel" aria-label="Resumen de marca GGamer">
+        <div class="hero-device">
+          <span class="device-light"></span>
+          <img src="img/teclado-neon.svg" alt="Teclado gamer con luces neon">
         </div>
-        <div class="stat-card">
-          <span class="stat-number">24/7</span>
-          <span class="stat-label">Experiencia inspirada en el gaming</span>
+        <div class="stat-row">
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Categorias principales</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">RGB</span>
+            <span class="stat-label">Identidad gamer neon</span>
+          </div>
         </div>
       </aside>
     </section>
@@ -83,6 +89,31 @@
           <h3>Auriculares Gamer</h3>
           <p>Sonido envolvente, microfonos nitidos y confort para sesiones largas de juego.</p>
           <a href="auriculares.html">Ver categoria</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section product-section">
+      <div class="section-heading">
+        <p class="eyebrow">Producto destacado</p>
+        <h2>Cards listas para el catalogo</h2>
+        <p>Este layout queda preparado para sumar mas productos en futuras etapas.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-media">
+            <img src="img/teclado-neon.svg" alt="Teclado mecanico Phantom TKL">
+          </div>
+          <div class="product-info">
+            <span class="card-tag">Mas vendido</span>
+            <h3>Phantom TKL RGB</h3>
+            <p>Teclado mecanico compacto con switches red, iluminacion RGB y estructura reforzada.</p>
+            <div class="product-footer">
+              <span class="price">$89.999</span>
+              <a class="button button-small" href="teclados.html">Comprar</a>
+            </div>
+          </div>
         </article>
       </div>
     </section>
