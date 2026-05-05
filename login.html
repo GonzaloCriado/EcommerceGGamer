@@ -11,21 +11,14 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="navbar container" aria-label="Navegacion principal">
-      <a class="brand" href="index.html">
+    <nav class="navbar container" aria-label="Navegacion de acceso">
+      <a class="brand" href="login.html">
         <img src="img/logo-ggamer.svg" alt="Logo de GGamer" width="44" height="44">
         <span>GGamer</span>
       </a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="teclados.html">Teclados</a>
-        <a href="mouse.html">Mouse</a>
-        <a href="auriculares.html">Auriculares</a>
-      </div>
       <div class="nav-actions">
         <a class="ghost-link" href="login.html" aria-current="page">Login</a>
         <a class="ghost-link" href="registro.html">Registro</a>
-        <a class="button button-outline" href="login.html">Logout</a>
       </div>
     </nav>
   </header>
@@ -38,7 +31,7 @@
         <p>Ingresa tus datos para acceder a tu cuenta y continuar tu experiencia en GGamer.</p>
       </div>
 
-      <form class="auth-form" action="#" method="post">
+      <form class="auth-form" action="#" method="post" data-login-form>
         <label for="login-email">Email</label>
         <input id="login-email" name="email" type="email" placeholder="tuemail@ggamer.com" required>
 
@@ -55,5 +48,6 @@
       <p>No tienes cuenta? <a href="registro.html">Registrate aqui</a>.</p>
     </div>
   </footer>
+  <script src="js/login.js" defer></script>
 </body>
 </html>

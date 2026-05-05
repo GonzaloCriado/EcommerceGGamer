@@ -11,23 +11,7 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="navbar container" aria-label="Navegacion principal">
-      <a class="brand" href="index.html">
-        <img src="img/logo-ggamer.svg" alt="Logo de GGamer" width="44" height="44">
-        <span>GGamer</span>
-      </a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="teclados.html">Teclados</a>
-        <a href="mouse.html">Mouse</a>
-        <a href="auriculares.html" aria-current="page">Auriculares</a>
-      </div>
-      <div class="nav-actions">
-        <a class="ghost-link" href="login.html">Login</a>
-        <a class="ghost-link" href="registro.html">Registro</a>
-        <a class="button button-outline" href="login.html">Logout</a>
-      </div>
-    </nav>
+    <div id="navbar-root" data-current-page="auriculares.html"></div>
   </header>
 
   <main class="container page-main">
@@ -40,50 +24,7 @@
       </p>
     </section>
 
-    <section class="product-grid">
-      <article class="product-card">
-        <div class="product-media">
-          <img src="img/auriculares-neon.svg" alt="Auriculares gamer Echo 7.1">
-        </div>
-        <div class="product-info">
-          <span class="card-tag">Surround</span>
-          <h2>Echo 7.1</h2>
-          <p>Sonido envolvente virtual con almohadillas amplias y suaves.</p>
-          <div class="product-footer">
-            <span class="price">$67.500</span>
-            <a class="button button-small" href="#">Ver mas</a>
-          </div>
-        </div>
-      </article>
-      <article class="product-card">
-        <div class="product-media">
-          <img src="img/auriculares-neon.svg" alt="Auriculares gamer Night Raid">
-        </div>
-        <div class="product-info">
-          <span class="card-tag">Streaming</span>
-          <h2>Night Raid</h2>
-          <p>Microfono flexible, diadema acolchada e iluminacion lateral LED.</p>
-          <div class="product-footer">
-            <span class="price">$54.900</span>
-            <a class="button button-small" href="#">Ver mas</a>
-          </div>
-        </div>
-      </article>
-      <article class="product-card">
-        <div class="product-media">
-          <img src="img/auriculares-neon.svg" alt="Auriculares gamer Shadow Wireless">
-        </div>
-        <div class="product-info">
-          <span class="card-tag">Wireless</span>
-          <h2>Shadow Wireless</h2>
-          <p>Conectividad sin cables y bateria para largas jornadas de juego.</p>
-          <div class="product-footer">
-            <span class="price">$82.000</span>
-            <a class="button button-small" href="#">Ver mas</a>
-          </div>
-        </div>
-      </article>
-    </section>
+    <section class="product-grid" data-products-container data-category="auriculares"></section>
   </main>
 
   <footer class="site-footer">
@@ -92,5 +33,9 @@
       <p><a href="index.html">Volver al inicio</a></p>
     </div>
   </footer>
+  <script src="js/data.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/logout.js" defer></script>
+  <script src="js/products.js" defer></script>
 </body>
 </html>

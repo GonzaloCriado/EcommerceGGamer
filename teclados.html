@@ -11,23 +11,7 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="navbar container" aria-label="Navegacion principal">
-      <a class="brand" href="index.html">
-        <img src="img/logo-ggamer.svg" alt="Logo de GGamer" width="44" height="44">
-        <span>GGamer</span>
-      </a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="teclados.html" aria-current="page">Teclados</a>
-        <a href="mouse.html">Mouse</a>
-        <a href="auriculares.html">Auriculares</a>
-      </div>
-      <div class="nav-actions">
-        <a class="ghost-link" href="login.html">Login</a>
-        <a class="ghost-link" href="registro.html">Registro</a>
-        <a class="button button-outline" href="login.html">Logout</a>
-      </div>
-    </nav>
+    <div id="navbar-root" data-current-page="teclados.html"></div>
   </header>
 
   <main class="container page-main">
@@ -40,50 +24,7 @@
       </p>
     </section>
 
-    <section class="product-grid">
-      <article class="product-card">
-        <div class="product-media">
-          <img src="img/teclado-neon.svg" alt="Teclado gamer Phantom TKL">
-        </div>
-        <div class="product-info">
-          <span class="card-tag">Competitivo</span>
-          <h2>Phantom TKL</h2>
-          <p>Formato compacto, switches red y efecto RGB personalizable.</p>
-          <div class="product-footer">
-            <span class="price">$89.999</span>
-            <a class="button button-small" href="#">Ver mas</a>
-          </div>
-        </div>
-      </article>
-      <article class="product-card">
-        <div class="product-media">
-          <img src="img/teclado-neon.svg" alt="Teclado gamer Nova 65">
-        </div>
-        <div class="product-info">
-          <span class="card-tag">Compacto</span>
-          <h2>Nova 65</h2>
-          <p>Diseno 65%, cable desmontable y keycaps de perfil premium.</p>
-          <div class="product-footer">
-            <span class="price">$74.500</span>
-            <a class="button button-small" href="#">Ver mas</a>
-          </div>
-        </div>
-      </article>
-      <article class="product-card">
-        <div class="product-media">
-          <img src="img/teclado-neon.svg" alt="Teclado gamer Titan Pro">
-        </div>
-        <div class="product-info">
-          <span class="card-tag">Pro setup</span>
-          <h2>Titan Pro</h2>
-          <p>Full size con macros dedicadas para streaming, MMO y productividad.</p>
-          <div class="product-footer">
-            <span class="price">$112.000</span>
-            <a class="button button-small" href="#">Ver mas</a>
-          </div>
-        </div>
-      </article>
-    </section>
+    <section class="product-grid" data-products-container data-category="teclados"></section>
   </main>
 
   <footer class="site-footer">
@@ -92,5 +33,9 @@
       <p><a href="mouse.html">Siguiente categoria</a></p>
     </div>
   </footer>
+  <script src="js/data.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/logout.js" defer></script>
+  <script src="js/products.js" defer></script>
 </body>
 </html>

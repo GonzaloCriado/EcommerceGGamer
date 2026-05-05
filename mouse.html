@@ -11,23 +11,7 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="navbar container" aria-label="Navegacion principal">
-      <a class="brand" href="index.html">
-        <img src="img/logo-ggamer.svg" alt="Logo de GGamer" width="44" height="44">
-        <span>GGamer</span>
-      </a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="teclados.html">Teclados</a>
-        <a href="mouse.html" aria-current="page">Mouse</a>
-        <a href="auriculares.html">Auriculares</a>
-      </div>
-      <div class="nav-actions">
-        <a class="ghost-link" href="login.html">Login</a>
-        <a class="ghost-link" href="registro.html">Registro</a>
-        <a class="button button-outline" href="login.html">Logout</a>
-      </div>
-    </nav>
+    <div id="navbar-root" data-current-page="mouse.html"></div>
   </header>
 
   <main class="container page-main">
@@ -40,50 +24,7 @@
       </p>
     </section>
 
-    <section class="product-grid">
-      <article class="product-card">
-        <div class="product-media">
-          <img src="img/mouse-neon.svg" alt="Mouse gamer Pulse X1">
-        </div>
-        <div class="product-info">
-          <span class="card-tag">FPS ready</span>
-          <h2>Pulse X1</h2>
-          <p>Mouse ultraliviano con DPI ajustable y switches rapidos.</p>
-          <div class="product-footer">
-            <span class="price">$42.999</span>
-            <a class="button button-small" href="#">Ver mas</a>
-          </div>
-        </div>
-      </article>
-      <article class="product-card">
-        <div class="product-media">
-          <img src="img/mouse-neon.svg" alt="Mouse gamer Vector Core">
-        </div>
-        <div class="product-info">
-          <span class="card-tag">Precision</span>
-          <h2>Vector Core</h2>
-          <p>Acabado antideslizante, agarre firme y respuesta de alta frecuencia.</p>
-          <div class="product-footer">
-            <span class="price">$38.750</span>
-            <a class="button button-small" href="#">Ver mas</a>
-          </div>
-        </div>
-      </article>
-      <article class="product-card">
-        <div class="product-media">
-          <img src="img/mouse-neon.svg" alt="Mouse gamer Strike Wireless">
-        </div>
-        <div class="product-info">
-          <span class="card-tag">Wireless</span>
-          <h2>Strike Wireless</h2>
-          <p>Conexion dual, bateria duradera y base RGB para escritorio gamer.</p>
-          <div class="product-footer">
-            <span class="price">$59.990</span>
-            <a class="button button-small" href="#">Ver mas</a>
-          </div>
-        </div>
-      </article>
-    </section>
+    <section class="product-grid" data-products-container data-category="mouse"></section>
   </main>
 
   <footer class="site-footer">
@@ -92,5 +33,9 @@
       <p><a href="auriculares.html">Siguiente categoria</a></p>
     </div>
   </footer>
+  <script src="js/data.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/logout.js" defer></script>
+  <script src="js/products.js" defer></script>
 </body>
 </html>

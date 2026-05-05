@@ -11,23 +11,7 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="navbar container" aria-label="Navegacion principal">
-      <a class="brand" href="index.html">
-        <img src="img/logo-ggamer.svg" alt="Logo de GGamer" width="44" height="44">
-        <span>GGamer</span>
-      </a>
-      <div class="nav-links">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="teclados.html">Teclados</a>
-        <a href="mouse.html">Mouse</a>
-        <a href="auriculares.html">Auriculares</a>
-      </div>
-      <div class="nav-actions">
-        <a class="ghost-link" href="login.html">Login</a>
-        <a class="ghost-link" href="registro.html">Registro</a>
-        <a class="button button-outline" href="login.html">Logout</a>
-      </div>
-    </nav>
+    <div id="navbar-root" data-current-page="index.html"></div>
   </header>
 
   <main>
@@ -100,22 +84,7 @@
         <p>Este layout queda preparado para sumar mas productos en futuras etapas.</p>
       </div>
 
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-media">
-            <img src="img/teclado-neon.svg" alt="Teclado mecanico Phantom TKL">
-          </div>
-          <div class="product-info">
-            <span class="card-tag">Mas vendido</span>
-            <h3>Phantom TKL RGB</h3>
-            <p>Teclado mecanico compacto con switches red, iluminacion RGB y estructura reforzada.</p>
-            <div class="product-footer">
-              <span class="price">$89.999</span>
-              <a class="button button-small" href="teclados.html">Comprar</a>
-            </div>
-          </div>
-        </article>
-      </div>
+      <div class="product-grid" data-products-container data-category="destacados"></div>
     </section>
   </main>
 
@@ -125,6 +94,9 @@
       <p><a href="login.html">Login</a> | <a href="registro.html">Registro</a></p>
     </div>
   </footer>
-  <!-- proximo js -->
+  <script src="js/data.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/logout.js" defer></script>
+  <script src="js/products.js" defer></script>
 </body>
 </html>
