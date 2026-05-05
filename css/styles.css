@@ -427,6 +427,42 @@ button {
   padding-top: 1rem;
 }
 
+.quantity-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.quantity-button {
+  width: 2.25rem;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+  padding: 0;
+  border: 1px solid rgba(20, 241, 217, 0.32);
+  border-radius: 50%;
+  background: rgba(20, 241, 217, 0.08);
+  color: #f3f8ff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  box-shadow: none;
+}
+.quantity-button:hover {
+  box-shadow: 0 0 18px rgba(20, 241, 217, 0.18);
+}
+
+.quantity-value {
+  min-width: 1.5rem;
+  color: #f3f8ff;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
 .price {
   color: #7cff6b;
   font-family: "Orbitron", sans-serif;
