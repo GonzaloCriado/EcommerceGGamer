@@ -28,10 +28,12 @@ function createProductCard(product) {
     productQuantities[product.id] = 0;
   }
 
+  const siteContext = window.GGamerData.getSiteContext();
+
   return (
     '<article class="product-card" data-product-id="' + product.id + '">' +
       '<div class="product-media">' +
-        '<img src="' + product.image + '" alt="' + product.alt + '">' +
+        '<img src="' + siteContext.productImagePath(product.image) + '" alt="' + product.alt + '">' +
       "</div>" +
       '<div class="product-info">' +
         '<span class="card-tag">' + product.tag + "</span>" +

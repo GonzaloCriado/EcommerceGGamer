@@ -1,5 +1,5 @@
 function redirectToLogin() {
-  window.location.href = "login.html";
+  window.location.href = window.GGamerData.getSiteContext().loginPath;
 }
 
 function setupLogoutButton() {

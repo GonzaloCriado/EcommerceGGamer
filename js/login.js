@@ -1,7 +1,7 @@
 function redirectToHome(event) {
   event.preventDefault();
   // Login simulado para la etapa actual.
-  window.location.href = "index.html";
+  window.location.href = window.GGamerData.getSiteContext().homePath;
 }
 
 function setupLoginForm() {

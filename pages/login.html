@@ -7,20 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <nav class="navbar container" aria-label="Navegacion de acceso">
-      <a class="brand" href="login.html">
-        <img src="img/logo-ggamer.svg" alt="Logo de GGamer" width="44" height="44">
-        <span>GGamer</span>
-      </a>
-      <div class="nav-actions">
-        <a class="ghost-link" href="login.html" aria-current="page">Login</a>
-        <a class="ghost-link" href="registro.html">Registro</a>
-      </div>
-    </nav>
+    <div id="navbar-root" data-current-page="login.html" data-navbar-mode="auth"></div>
   </header>
 
   <main class="container form-page">
@@ -45,9 +36,11 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>No tienes cuenta? <a href="registro.html">Registrate aqui</a>.</p>
+      <p>No tienes cuenta? <a href="./registro.html">Registrate aqui</a>.</p>
     </div>
   </footer>
-  <script src="js/login.js" defer></script>
+  <script src="../js/data.js" defer></script>
+  <script src="../js/navbar.js" defer></script>
+  <script src="../js/login.js" defer></script>
 </body>
 </html>
