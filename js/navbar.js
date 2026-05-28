@@ -60,7 +60,7 @@ function renderNavbar() {
       '</a>' +
       '<div class="nav-links">' + navLinks + '</div>' +
       '<div class="nav-actions">' +
-        '<a class="button button-outline button-small" href="' + siteContext.cartPath + '">Carrito</a>' +
+        '<a class="button button-outline button-small" href="' + siteContext.cartPath + '">Carrito <span class="cart-badge" data-cart-count></span></a>' +
         '<button class="button button-outline button-small" type="button" data-logout-button>Cerrar sesion</button>' +
       '</div>' +
     '</nav>';

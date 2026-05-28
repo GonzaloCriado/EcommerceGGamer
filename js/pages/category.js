@@ -1,6 +1,14 @@
 // Verifica que el usuario esté logueado antes de mostrar la página.
 AuthService.requireAuth();
 
+// Actualiza el badge numérico del botón "Carrito" en el navbar.
+function actualizarBadgeCarrito() {
+  var badge = document.querySelector('[data-cart-count]');
+  if (!badge) return;
+  var count = CartService.getCount();
+  badge.textContent = count > 0 ? count : '';
+}
+
 // Productos cargados desde el JSON
 var productosCategoria = [];
 
@@ -21,6 +29,9 @@ function renderizarCategoria(productos) {
   }
 
   contenedorCategoria.innerHTML = productos.map(createProductCard).join('');
+
+  // Muestra el badge con los items que ya había en el carrito al cargar la página.
+  actualizarBadgeCarrito();
 }
 
 // Controla los botones + y -
@@ -65,6 +76,7 @@ function manejarAgregarAlCarrito(event) {
   if (!producto) return;
 
   CartService.addToCart(producto, cantidad);
+  actualizarBadgeCarrito();
 
   // Feedback visual al usuario.
   boton.textContent = '¡Agregado!';

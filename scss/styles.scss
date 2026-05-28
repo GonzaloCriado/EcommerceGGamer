@@ -687,6 +687,28 @@ button {
   }
 }
 
+// Badge de cantidad en el botón del carrito (navbar)
+.cart-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.3rem;
+  height: 1.3rem;
+  margin-left: 0.35rem;
+  padding: 0 0.2rem;
+  background: color(cyan);
+  color: #0a0f1e;
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 999px;
+  vertical-align: middle;
+  line-height: 1;
+
+  &:empty {
+    display: none;
+  }
+}
+
 // Botón añadir al carrito dentro de la card
 .add-to-cart-btn {
   width: 100%;
