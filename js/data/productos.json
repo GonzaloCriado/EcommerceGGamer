@@ -1,0 +1,83 @@
+[
+  {
+    "id": "phantom-tkl-rgb",
+    "titulo": "Phantom TKL RGB",
+    "categoria": "teclados",
+    "imagen": "teclado-neon.svg",
+    "descripcion": "Teclado mecánico compacto TKL con switches Red lineales, iluminación RGB por tecla y estructura de aluminio reforzado.",
+    "precio": 89999,
+    "tag": "Más vendido"
+  },
+  {
+    "id": "nova-65",
+    "titulo": "Nova 65",
+    "categoria": "teclados",
+    "imagen": "teclado-neon.svg",
+    "descripcion": "Diseño 65% ultra compacto, cable USB-C desmontable y keycaps PBT de perfil Cherry premium.",
+    "precio": 74500,
+    "tag": "Compacto"
+  },
+  {
+    "id": "titan-pro",
+    "titulo": "Titan Pro",
+    "categoria": "teclados",
+    "imagen": "teclado-neon.svg",
+    "descripcion": "Full size con macros dedicadas para streaming, MMO y productividad. Reposamuñecas magnético incluido.",
+    "precio": 112000,
+    "tag": "Pro Setup"
+  },
+  {
+    "id": "pulse-x1",
+    "titulo": "Pulse X1",
+    "categoria": "mouse",
+    "imagen": "mouse-neon.svg",
+    "descripcion": "Mouse ultraliviano de 58g con sensor óptico de 25600 DPI, switches de 60M de clicks y cable paracord.",
+    "precio": 42999,
+    "tag": "FPS Ready"
+  },
+  {
+    "id": "vector-core",
+    "titulo": "Vector Core",
+    "categoria": "mouse",
+    "imagen": "mouse-neon.svg",
+    "descripcion": "Acabado antideslizante, agarre ergonómico firme y sensor con respuesta de alta frecuencia para control total.",
+    "precio": 38750,
+    "tag": "Precisión"
+  },
+  {
+    "id": "strike-wireless",
+    "titulo": "Strike Wireless",
+    "categoria": "mouse",
+    "imagen": "mouse-neon.svg",
+    "descripcion": "Conexión inalámbrica de 2.4GHz y Bluetooth, batería de 70 horas y base de carga con luz RGB.",
+    "precio": 59990,
+    "tag": "Wireless"
+  },
+  {
+    "id": "echo-71",
+    "titulo": "Echo 7.1",
+    "categoria": "auriculares",
+    "imagen": "auriculares-neon.svg",
+    "descripcion": "Sonido envolvente virtual 7.1 con drivers de 50mm, almohadillas de memory foam y micrófono retráctil.",
+    "precio": 67500,
+    "tag": "Surround"
+  },
+  {
+    "id": "night-raid",
+    "titulo": "Night Raid",
+    "categoria": "auriculares",
+    "imagen": "auriculares-neon.svg",
+    "descripcion": "Micrófono flexible con cancelación de ruido, diadema acolchada ajustable e iluminación LED lateral.",
+    "precio": 54900,
+    "tag": "Streaming"
+  },
+  {
+    "id": "shadow-wireless",
+    "titulo": "Shadow Wireless",
+    "categoria": "auriculares",
+    "imagen": "auriculares-neon.svg",
+    "descripcion": "Conectividad inalámbrica de 2.4GHz, batería de 40 horas y cancelación de ruido activa para largas sesiones.",
+    "precio": 82000,
+    "tag": "Wireless"
+  }
+]
