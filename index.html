@@ -77,14 +77,13 @@
       </div>
     </section>
 
-    <section class="container section product-section">
+    <!-- Productos por categoría renderizados con JS desde productos.json -->
+    <section class="container section">
       <div class="section-heading">
-        <p class="eyebrow">Producto destacado</p>
-        <h2>Cards listas para el catalogo</h2>
-        <p>Este layout queda preparado para sumar mas productos en futuras etapas.</p>
+        <p class="eyebrow">Catalogo completo</p>
+        <h2>Productos por categoria</h2>
       </div>
-
-      <div class="product-grid" data-products-container data-category="destacados"></div>
+      <div data-products-home></div>
     </section>
   </main>
 
@@ -94,9 +93,15 @@
       <p><a href="./pages/login.html">Login</a> | <a href="./pages/registro.html">Registro</a></p>
     </div>
   </footer>
+
+  <!-- Orden de carga: contexto → auth → carrito → productos → card → navbar → logout → lógica de página -->
   <script src="./js/data.js" defer></script>
+  <script src="./js/services/authService.js" defer></script>
+  <script src="./js/services/cartService.js" defer></script>
+  <script src="./js/services/productsService.js" defer></script>
+  <script src="./js/components/productCard.js" defer></script>
   <script src="./js/navbar.js" defer></script>
   <script src="./js/logout.js" defer></script>
-  <script src="./js/products.js" defer></script>
+  <script src="./js/pages/home.js" defer></script>
 </body>
 </html>

@@ -33,9 +33,14 @@
       <p><a href="./auriculares.html">Siguiente categoria</a></p>
     </div>
   </footer>
+  <!-- Orden de carga: contexto → auth → carrito → productos → card → navbar → logout → lógica de página -->
   <script src="../js/data.js" defer></script>
+  <script src="../js/services/authService.js" defer></script>
+  <script src="../js/services/cartService.js" defer></script>
+  <script src="../js/services/productsService.js" defer></script>
+  <script src="../js/components/productCard.js" defer></script>
   <script src="../js/navbar.js" defer></script>
   <script src="../js/logout.js" defer></script>
-  <script src="../js/products.js" defer></script>
+  <script src="../js/pages/category.js" defer></script>
 </body>
 </html>

@@ -669,3 +669,166 @@ button {
     width: 100%;
   }
 }
+
+// ==============================================
+// ETAPA 4 — NUEVOS ESTILOS
+// ==============================================
+
+// Botón peligro (eliminar del carrito)
+.button-danger {
+  background: linear-gradient(135deg, rgba(127, 29, 29, 0.9), rgba(153, 27, 27, 0.9));
+  color: #fca5a5;
+  box-shadow: 0 8px 20px rgba(185, 28, 28, 0.28);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+
+  &:hover {
+    box-shadow: 0 12px 28px rgba(185, 28, 28, 0.45);
+    filter: brightness(1.1);
+  }
+}
+
+// Botón añadir al carrito dentro de la card
+.add-to-cart-btn {
+  width: 100%;
+  margin-top: 0.85rem;
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: default;
+    transform: none;
+  }
+}
+
+// Secciones por categoría en el home
+.home-category-section {
+  margin-bottom: 3.5rem;
+}
+
+.home-category-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  h2 { margin-bottom: 0; }
+}
+
+// Grid de productos en el home: 3 columnas (anula el límite de la sección antigua)
+.home-product-grid {
+  max-width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+// Carrito: mensaje vacío
+.cart-empty-msg {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #a8b7d5;
+  font-size: 1.15rem;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+// Carrito: lista de items
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015));
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  transition: border-color 0.2s ease;
+
+  &:hover { border-color: rgba(20, 241, 217, 0.28); }
+}
+
+.cart-item-media img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: radial-gradient(circle, rgba(20, 241, 217, 0.1), transparent 70%);
+  padding: 0.5rem;
+  flex-shrink: 0;
+}
+
+.cart-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  h3 { font-size: 1.05rem; margin-bottom: 0; color: #f3f8ff; }
+}
+
+.cart-item-meta {
+  margin-bottom: 0;
+  color: #a8b7d5;
+  font-size: 0.95rem;
+}
+
+.cart-item-subtotal {
+  margin-bottom: 0;
+  color: #7cff6b;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  text-shadow: 0 0 12px rgba(124, 255, 107, 0.2);
+}
+
+// Carrito: resumen con total
+.cart-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(20, 241, 217, 0.2);
+  border-radius: 20px;
+  background: linear-gradient(160deg, rgba(20, 241, 217, 0.055), rgba(255, 255, 255, 0.02));
+}
+
+.cart-total {
+  margin-bottom: 0;
+  color: #14f1d9;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.04em;
+  text-shadow: 0 0 18px rgba(20, 241, 217, 0.35);
+}
+
+// Mensaje de error al cargar JSON
+.error-message {
+  padding: 1.5rem;
+  color: #fca5a5;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  border-radius: 14px;
+  background: rgba(220, 38, 38, 0.08);
+}
+
+@media (max-width: 640px) {
+  .home-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

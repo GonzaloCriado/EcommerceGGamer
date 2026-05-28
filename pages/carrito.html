@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GGamer | Auriculares Gamer</title>
+  <title>GGamer | Carrito</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,36 +11,49 @@
 </head>
 <body>
   <header class="site-header">
-    <div id="navbar-root" data-current-page="auriculares.html"></div>
+    <div id="navbar-root" data-current-page="carrito.html"></div>
   </header>
 
   <main class="container page-main">
     <section class="page-hero">
-      <p class="eyebrow">Categoria</p>
-      <h1>Auriculares Gamer</h1>
-      <p>
-        Sumergite en el audio envolvente con headsets comodos, microfonos claros y una
-        presencia visual a la altura de cualquier setup gamer.
-      </p>
+      <p class="eyebrow">Tu selección</p>
+      <h1>Carrito de compras</h1>
+      <p>Revisá los productos que seleccionaste antes de finalizar tu pedido.</p>
     </section>
 
-    <section class="product-grid" data-products-container data-category="auriculares"></section>
+    <section class="cart-section">
+
+      <!-- Mensaje cuando el carrito está vacío -->
+      <p class="cart-empty-msg" data-cart-empty style="display: none;">
+        Tu carrito está vacío. ¡Explorá el catálogo y agregá tus productos favoritos!
+      </p>
+
+      <!-- Lista de productos del carrito -->
+      <div class="cart-list" data-cart-container></div>
+
+      <!-- Total y botón para seguir comprando -->
+      <div class="cart-summary">
+        <p class="cart-total" data-cart-total></p>
+        <a class="button" href="../index.html">Seguir comprando</a>
+      </div>
+
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>GGamer - Audio potente para competir, comunicar y disfrutar.</p>
+      <p>GGamer - Setup gamer con estilo competitivo.</p>
       <p><a href="../index.html">Volver al inicio</a></p>
     </div>
   </footer>
-  <!-- Orden de carga: contexto → auth → carrito → productos → card → navbar → logout → lógica de página -->
+
+  <!-- Orden de carga: contexto → auth → carrito → card → navbar → logout → lógica de página -->
   <script src="../js/data.js" defer></script>
   <script src="../js/services/authService.js" defer></script>
   <script src="../js/services/cartService.js" defer></script>
-  <script src="../js/services/productsService.js" defer></script>
   <script src="../js/components/productCard.js" defer></script>
   <script src="../js/navbar.js" defer></script>
   <script src="../js/logout.js" defer></script>
-  <script src="../js/pages/category.js" defer></script>
+  <script src="../js/pages/cart.js" defer></script>
 </body>
 </html>
